@@ -1,0 +1,45 @@
+{
+  "name": "compile-less-loader",
+  "version": "1.0.0",
+  "description": "a less loader base on webpacl",
+  "main": "./dist/compile-less-loader.cjs.js",
+  "scripts": {
+    "test": "webpack --inline --progress --config ./example/webpack.prod.js",
+    "dev": "rimraf dist && cross-env NODE_ENV=dev node rollup.config.js",
+    "build": "rimraf dist && cross-env NODE_ENV=prod  node rollup.config.js"
+  },
+  "keywords": ["less", "webpack", "less-loader", "compile-less-loader"],
+  "author": "huahao <lvhuahao@ad61v1.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@rollup/plugin-image": "^2.0.4",
+    "autoprefixer": "^9.7.6",
+    "babel-loader": "^8.1.0",
+    "chalk": "^4.0.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "cross-env": "^7.0.2",
+    "css-loader": "^3.5.2",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.2.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "ora": "^4.0.4",
+    "postcss-loader": "^3.0.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.6.1",
+    "rollup-plugin-alias": "^2.2.0",
+    "rollup-plugin-buble": "^0.19.8",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^5.3.0",
+    "vue": "^2.6.11",
+    "vue-loader": "^15.9.1",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "less": "^3.11.1"
+  }
+}
