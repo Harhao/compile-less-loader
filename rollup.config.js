@@ -3,6 +3,7 @@ const loadConfigFile = require("rollup/dist/loadConfigFile");
 const path = require("path");
 const rollup = require("rollup");
 const ora = require("ora");
+const chalk = require("chalk");
 
 let watcher;
 loadConfigFile(path.resolve(__dirname, "config/index.js")).then(
@@ -25,7 +26,7 @@ loadConfigFile(path.resolve(__dirname, "config/index.js")).then(
             spinner.text = '编译中';break;
           case "END":
             spinner.succeed("编译成功\n");
-            logger.success("持续监听文件更新...");
+            logger.success(ora.green("持续监听文件更新..."));
             break;
           case "FATAL":
             spinner.fail("编译失败");
