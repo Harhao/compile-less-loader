@@ -1,8 +1,8 @@
 {
   "name": "compile-less-loader",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "https://github.com/Harhao/compile-less-loader",
-  "description": "a less loader base on webpacl",
+  "description": "A webpack loader which compile less to css",
   "main": "./dist/compile-less-loader.cjs.js",
   "scripts": {
     "test": "webpack --inline --progress --config ./example/webpack.prod.js",
