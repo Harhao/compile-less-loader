@@ -1,6 +1,6 @@
 {
   "name": "compile-less-loader",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/Harhao/compile-less-loader",
   "description": "a less loader base on webpacl",
   "main": "./dist/compile-less-loader.cjs.js",
