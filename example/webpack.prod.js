@@ -33,7 +33,7 @@ module.exports = {
             loader: path.resolve(
               __dirname,
               "../dist/compile-less-loader.cjs.js"
-            ),
+            )
           },
         ],
       },

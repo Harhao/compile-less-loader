@@ -33,7 +33,7 @@ const inputOptions = {
     }),
     commonjs(),
     isProduction && terser(),
-  ],
+  ]
 };
 
 const output = {

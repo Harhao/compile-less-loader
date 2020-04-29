@@ -1,6 +1,7 @@
 {
   "name": "compile-less-loader",
-  "version": "1.0.0",
+  "version": "0.0.1",
+  "homepage": "https://github.com/Harhao/compile-less-loader",
   "description": "a less loader base on webpacl",
   "main": "./dist/compile-less-loader.cjs.js",
   "scripts": {
@@ -9,7 +10,7 @@
     "build": "rimraf dist && cross-env NODE_ENV=prod  node rollup.config.js"
   },
   "keywords": ["less", "webpack", "less-loader", "compile-less-loader"],
-  "author": "huahao <lvhuahao@ad61v1.com>",
+  "author": "huahao <huahaoworkspace@163.com>",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.9.0",
