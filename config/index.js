@@ -23,17 +23,14 @@ const inputOptions = {
     json({
       compact: true,
     }),
-    image({
-      exclude: ["node_modules/**"],
-      include: ["src/**"],
-    }),
     resolve(),
     buble({
       exclude: ["node_modules/**"],
     }),
     commonjs(),
-    isProduction && terser(),
-  ]
+    isProduction() && terser(),
+  ],
+  external: ["less","uri-js"]
 };
 
 const output = {

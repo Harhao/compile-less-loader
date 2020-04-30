@@ -33,20 +33,20 @@ module.exports = {
             loader: path.resolve(
               __dirname,
               "../dist/compile-less-loader.cjs.js"
-            )
+            ),
           },
         ],
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
         use: "file-loader",
-      },
+      }
     ],
   },
   resolve: {
     modules: ["node_modules"],
     alias: {
-      "@": path.resolve(__dirname, "../src"),
+      "@": path.resolve(__dirname, "."),
     },
     extensions: [".js", ".json", ".vue", ".less"],
   },

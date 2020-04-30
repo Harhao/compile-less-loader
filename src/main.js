@@ -14,7 +14,8 @@ module.exports = function(source) {
       console.error(error);
       return;
     }
-    const result = output.css;
-    callback(null, result);
+    const { css, imports } = output;
+    imports.length && imports.forEach(this.addDependency, this);
+    callback(null, css);
   });
 };
